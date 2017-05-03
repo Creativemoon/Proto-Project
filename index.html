@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LA Data Project</title>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+      
+        
+        <link rel="stylesheet" href="style.css" />
+    </head>
+<body>
+    <div class="main-wrapper">
+        
+        <h4><i class="material-icons">web</i>LA Data Immigration Project</h4>
+      <div class="section">
+        <p>Welcome to the LA data project on an immigration workshop.
+       This website is used to show the information on the events that was taken from past events throughout various of immigrate workshop.
+       You may want to use this website on immigration workshops to get information like date of events, location, organization, contacts, languages and notes provided from the organization.
+      In order to get this information, you must insert a zip code on the line depending on where you are located at or a choosing for your choice.
+      Afterwards, click that like button ;).
+      Be aware that a few zip codes doesn't work either because the information isn't provided or an error occur.
+      NOTE: If you want a zip code example, you may insert 90032 to test how our website works.
+      For further information, you may contact the organization with the given number below on each card provided.
+      Feel free to explore and browse our Immigration workshop site anytime. </p>
+      </div>
+    </div> 
+        <div class="container">,
+        <p>Insert Zip Code: <input id="search" /></p>
+        <button onclick={getLADataFromAPI()} a class="waves-effect waves-light btn"><i class="material-icons left">thumb_up</i>Like Button</button>
+        </div>
+        <div class="row"><div id="result"></div></div>
+        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <script src="index.js"></script>
+        
+        <div class="footer">&copy 2017 Immigration Squad</div>
+    
+    
+</body>
+</html>
